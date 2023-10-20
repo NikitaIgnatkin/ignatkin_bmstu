@@ -86,6 +86,8 @@ function isleap(year)
     end
 end
 
+
+
 function chesscolor(cell1, cell2)
     buf1 = cell1[1] - 'a'+1
     buf2 = cell2[1] - 'a'+1
