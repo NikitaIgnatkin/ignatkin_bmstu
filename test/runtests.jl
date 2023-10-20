@@ -10,8 +10,8 @@ end
 
 @testset "touppercase" begin
     @test touppercase("julia") == "JULIA";
-    @test toappercase("hello World") == "HELLO WORLD";
-    @test toappercase("dsfdsf43243HH,,.sdfd&*(&(*HGJSdsghfdsjkh***))") == uppercase("dsfdsf43243HH,,.sdfd&*(&(*HGJSdsghfdsjkh***))");
+    @test touppercase("hello World") == "HELLO WORLD";
+    @test touppercase("dsfdsf43243HH,,.sdfd&*(&(*HGJSdsghfdsjkh***))") == uppercase("dsfdsf43243HH,,.sdfd&*(&(*HGJSdsghfdsjkh***))");
 end
 
 @testset "norms" begin
@@ -33,7 +33,7 @@ end
     @test chesscolor(['h',5], ['c',5]) == false;    
 end
 
-@tetset "isleap" begin
+@testset "isleap" begin
     @test isleap(2023) == false;
     @test isleap(1904) == true;
     @test isleap(1900) == false;
